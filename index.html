@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Website</title>
+    <meta name="description" content="Basic HTML starter page" />
+    <style>
+        /* Minimal reset and layout */
+        :root { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height: 1.5; color: #111; background: #f7f7f8; }
+        body { margin: 0; padding: 0; }
+        header, footer { background: #0b5fff; color: #fff; padding: 1rem; }
+        main { max-width: 960px; margin: 2rem auto; padding: 1rem; background: #fff; box-shadow: 0 2px 8px rgba(16,24,40,0.06); }
+        nav a { color: #fff; text-decoration: none; margin-right: 1rem; }
+        footer { font-size: 0.9rem; text-align: center; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <strong>Site</strong>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome</h1>
+        <p>This is a basic HTML starter page. Replace this content with your project.</p>
+        <section>
+            <h2>Example section</h2>
+            <p>Use semantic HTML elements for better structure and accessibility.</p>
+        </section>
+    </main>
+
+    <footer>
+        © <span id="year"></span> Your Company
+    </footer>
+
+    <script>
+        // Small script to update the year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
