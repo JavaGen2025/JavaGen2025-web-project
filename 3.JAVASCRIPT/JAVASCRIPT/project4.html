@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4 - Favorite Books JavaScript</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<nav aria-label="Main navigation">
+    <a href="../index.html">Home</a>
+    <a href="../1.HTML HTML/project2.html">Project 2</a>
+    <a href="../2.CSS CSS/project3.html">Project 3</a>
+    <a href="project4.html">Project 4</a>
+</nav>
+
+<main>
+
+    <section>
+        <h1>Project 4 - Favorite Books</h1>
+
+        <p>
+            This page continues my website theme of favorite books. For this project,
+            I added JavaScript to create an interactive experience where users can
+            receive a personalized message based on their favorite book.
+        </p>
+
+        <h2>My Favorite Books</h2>
+        <ul>
+            <li>Harry Potter</li>
+            <li>Dune</li>
+            <li>A Thousand Splendid Suns</li>
+        </ul>
+
+        <h2>Featured Book</h2>
+        <img src="../images/harrypotter.jpeg" alt="Cover of Harry Potter and the Sorcerer's Stone">
+
+        <p>
+            Learn more about books at the
+            <a href="https://www.goodreads.com/" target="_blank">Goodreads website</a>.
+        </p>
+    </section>
+
+    <section id="book-form-section">
+        <h2>Favorite Book Form</h2>
+
+        <p>
+            Enter your name and favorite book to receive a personalized message.
+        </p>
+
+        <form id="bookForm">
+            <label for="userName">Your name:</label>
+            <input type="text" id="userName" name="userName" required>
+
+            <label for="favoriteBook">Favorite book:</label>
+            <input type="text" id="favoriteBook" name="favoriteBook" required>
+
+            <label for="genre">Favorite genre:</label>
+            <input type="text" id="genre" name="genre" required>
+
+            <button type="submit">Show My Book Message</button>
+        </form>
+
+        <div id="messageBox" aria-live="polite"></div>
+    </section>
+
+</main>
+
+<script src="../4.FINAL/script.js"></script>
+
+</body>
+</html>
