@@ -101,3 +101,60 @@ table, th, td {
 section {
     margin-bottom: 40px;
 }
+//CSS for project 4//
+
+form {
+    max-width: 500px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border: 2px solid #ffd95a;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a30000;
+}
+
+#messageBox {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff2a8;
+}
+//Responsiveness CSS// 
+
+@media screen and (max-width: 600px) {
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
